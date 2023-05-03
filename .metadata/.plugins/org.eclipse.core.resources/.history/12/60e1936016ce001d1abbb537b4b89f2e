@@ -1,0 +1,20 @@
+
+public class Addition implements Chain{
+
+	private int chain;
+	@Override
+	public void setNextChain(Chain nextchain) {
+		
+		
+		
+	}
+
+	@Override
+	public void calculation(Numbers number) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+
+}

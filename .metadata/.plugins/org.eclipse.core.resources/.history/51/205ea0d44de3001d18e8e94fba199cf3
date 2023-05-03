@@ -1,0 +1,5 @@
+package com.onerivet.deskbook.security;
+
+public class SecurityConfig {
+
+}

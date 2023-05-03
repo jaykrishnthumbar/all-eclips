@@ -1,0 +1,10 @@
+package com.onerivet.deskbook.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class UserServiceImpl {
+	
+	@Autowired
+	public UserService userservice;
+
+}

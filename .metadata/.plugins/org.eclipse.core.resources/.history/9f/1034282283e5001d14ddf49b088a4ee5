@@ -1,0 +1,29 @@
+package com.onerivet.deskbook.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.onerivet.deskbook.entity.User;
+import com.onerivet.deskbook.repo.UserRepo;
+
+@Service
+public class UserServiceImpl  implements UserService{
+	
+	@Autowired
+	public UserRepo userrepo;
+
+	@Override
+	public String saveUser(User user) {
+		userrepo.save(user);
+		return "saved...";
+	}
+
+	@Override
+	public List<User> getAll() {
+		return userrepo.findAll();
+	}
+
+	
+}

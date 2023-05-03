@@ -1,0 +1,16 @@
+package com.onerivet.deskbook.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.User;
+
+public class UserServiceImpl  implements UserService{
+	
+	@Autowired
+	public UserService userservice;
+
+	@Override
+	public String Save(User user) {
+		return userservice.Save(user);
+	}
+
+}

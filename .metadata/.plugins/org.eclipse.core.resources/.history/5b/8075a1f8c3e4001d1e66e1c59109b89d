@@ -1,0 +1,5 @@
+package com.onerivet.deskbook.service;
+
+public interface UserService {
+
+}

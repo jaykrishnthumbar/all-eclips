@@ -1,0 +1,11 @@
+package com.onerivet.deskbook.service;
+
+import org.springframework.security.core.userdetails.User;
+import org.springframework.stereotype.Service;
+
+@Service
+public interface UserService {
+	
+	public String Save(User user);
+
+}

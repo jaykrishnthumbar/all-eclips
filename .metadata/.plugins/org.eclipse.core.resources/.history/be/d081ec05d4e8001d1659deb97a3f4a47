@@ -1,0 +1,19 @@
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://1authority-interns.1rivet.com:5004
+          jwkSeturi: https://1authority-interns.1rivet.com:5004/.well-known/openid-configuration/jwks
+          audiences: DeskBookApi
+          
+  datasource:
+   url: jdbc:sqlserver://localhost:1433;DatabaseName=Secure;encrypt=false
+   username: sa
+   password: Admin@123 
+  jpa:
+   hibernate:
+    ddl-auto: update        
+
+        
+ 

@@ -1,0 +1,13 @@
+
+public class Calculation {
+
+	public static void main(String[] args) {
+		
+		Chain chain1 = new Addition();
+		Chain chain2 = new Multiplication();
+		Chain chain3 = new Substration();
+		Chain chain4 = new Divition();
+
+	}
+
+}

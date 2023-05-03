@@ -1,0 +1,54 @@
+package com.example.Security.controller;
+
+import java.util.List;
+
+import javax.annotation.security.RolesAllowed;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.example.Security.entity.User;
+import com.example.Security.service.UserService;
+
+
+@RestController
+@RequestMapping("/")
+public class UserController {
+
+	@Autowired
+	private UserService userservice;
+
+	@PostMapping("/save")
+	public String saveUser(@RequestBody User user) {
+		return userservice.saveUser(user);
+		
+	}
+	
+	@PreAuthorize("hasRole('ADMIN')")
+	@GetMapping("/all-user")
+	public List<User> getAll(User user) {
+		return userservice.getAll(user);
+		
+	}
+	
+	@DeleteMapping("/delete-user/{id}")
+	public String deleteUser(@PathVariable int id) {
+		return userservice.deleteUser(id);
+		
+	}
+	
+	@PreAuthorize("hasRole('USER')")
+	@GetMapping("/get-by-id/{id}")
+	public User getById(@PathVariable int id) {
+		return userservice.getById(id);
+		
+	} 
+	
+}

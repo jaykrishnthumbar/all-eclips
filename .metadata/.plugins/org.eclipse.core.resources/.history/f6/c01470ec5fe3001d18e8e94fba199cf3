@@ -1,0 +1,22 @@
+package com.onerivet.deskbook.security;
+
+public class CustomValidator  {
+
+//	private final List<String> audiences;
+//
+//	public CustomValidator(List<String> audiences) {
+//		this.audiences = audiences;
+//	}
+//
+//	@Override
+//	public OAuth2TokenValidatorResult validate(Jwt jwt) {
+//		if (jwt.getAudiences().containsAll(audiences)) {
+//			return OAuth2TokenValidatorResult.success();
+//		} else {
+//			OAuth2Error error = new OAuth2Error(OAuth2ErrorCodes.INVALID_REQUEST, "Invalid Audience...", null);
+//			return OAuth2TokenValidatorResult.failure(error);
+//		}
+//
+//	}
+
+}

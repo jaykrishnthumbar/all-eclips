@@ -1,0 +1,15 @@
+package com.onerivet.deskbook.service;
+
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.onerivet.deskbook.entity.User;
+
+@Service
+public interface UserService {
+	
+	
+
+}

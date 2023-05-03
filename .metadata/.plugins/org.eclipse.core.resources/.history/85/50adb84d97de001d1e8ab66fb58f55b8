@@ -1,0 +1,9 @@
+package com.example.Security.service;
+
+import com.example.Security.entity.User;
+
+public interface UserService {
+	
+	public User saveUser();
+
+}

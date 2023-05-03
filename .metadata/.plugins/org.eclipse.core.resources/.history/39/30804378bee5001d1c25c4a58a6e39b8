@@ -1,0 +1,20 @@
+package com.onerivet.deskbook.repo;
+
+import java.awt.print.Pageable;
+import java.util.Optional;
+
+import org.springframework.data.domain.Page;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.onerivet.deskbook.entity.User;
+
+
+public interface UserRepo extends JpaRepository<User, Integer>{
+
+	Optional<User> findByEmail(String email);
+
+	
+
+	
+
+}

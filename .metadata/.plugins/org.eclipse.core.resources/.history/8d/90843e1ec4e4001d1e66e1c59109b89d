@@ -1,0 +1,7 @@
+package com.onerivet.deskbook.service;
+
+public class UserServiceImpl {
+	
+	public UserService userservice;
+
+}

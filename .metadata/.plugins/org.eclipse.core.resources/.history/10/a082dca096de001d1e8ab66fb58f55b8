@@ -1,0 +1,13 @@
+package com.example.Security.service;
+
+import com.example.Security.entity.User;
+
+public class UserServiceImpl implements UserService{
+
+	@Override
+	public User saveUser() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

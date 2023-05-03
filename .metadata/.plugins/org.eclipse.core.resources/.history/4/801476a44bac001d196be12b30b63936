@@ -1,0 +1,11 @@
+package com.practice;
+
+import java.sql.Connection;
+
+public class Database {
+	static Connection getDatabaseConnection() {
+		return null;
+
+	}
+
+}

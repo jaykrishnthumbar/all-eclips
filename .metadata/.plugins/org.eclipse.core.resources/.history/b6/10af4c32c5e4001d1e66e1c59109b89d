@@ -1,0 +1,5 @@
+package com.onerivet.deskbook.repo;
+
+public interface UserRepo extends  {
+
+}
